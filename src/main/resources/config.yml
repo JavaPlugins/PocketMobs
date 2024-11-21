@@ -1,0 +1,75 @@
+lang: en
+logic:
+  buy:
+    enabled: false
+  craft:
+    enabled: false
+  ball-behaviour:
+    return-to-inventory:
+      on-free-mob: false
+      on-catch-mob: false
+    reduce-usages:
+      miss-target: true
+keep-entity-uuid: false
+worlds:
+  - world
+  - world_nether
+  - world_the_end
+indicators:
+  ball-usages-over:
+    hologram:
+      enabled: true
+      duration: 5
+    actionbar:
+      enabled: false
+    chat:
+      enabled: false
+  catch-success:
+    hologram:
+      enabled: true
+    actionbar:
+      enabled: false
+    chat:
+      enabled: false
+  missed:
+    hologram:
+      enabled: true
+    actionbar:
+      enabled: false
+    chat:
+      enabled: false
+default:
+  ball:
+    effects:
+      catch:
+        particle:
+          name: SPELL_MOB
+          amount: 50
+        sound:
+          name: BLOCK_METAL_PLACE
+          volume: 1
+          pitch: 2
+      free:
+        particle:
+          name: EXPLOSION_LARGE
+          amount: 1
+        sound:
+          name: ENTITY_CHICKEN_EGG
+          volume: 1
+          pitch: 2
+      missed:
+        particle:
+          name: CRIT
+          amount: 20
+        sound:
+          name: ENTITY_ARMOR_STAND_HIT
+          volume: 1
+          pitch: 2
+      not_spawned:
+        particle:
+          name: BARRIER
+          amount: 1
+        sound:
+          name: ENTITY_ARMOR_STAND_HIT
+          volume: 1
+          pitch: 2

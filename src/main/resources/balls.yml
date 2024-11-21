@@ -1,0 +1,187 @@
+balls:
+  example_ball:
+    enabled: false
+    display-name: "This is just an example Ball, you can see every attribute you can set here.
+    Don't worry it's disabled, you can't get it ingame"
+    head-texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOGRlYjQ3ZDQ3YzI4YTZhNDNmYzViOGQwZmE0NmIyZGVmYmFjOWNiZDVhYjM0NDgwMzI1YTI0NTliZTExMGY0In19fQ=="
+    max-usages: 4
+    unlimited-usages: false
+    catch-success: 65.3
+    catchable-entities:
+      - PIG
+      - HORSE
+      - COW
+    blacklisted-entities:
+      - WITHER
+      - ENDER_DRAGON
+    effects:
+      catch:
+        particle:
+          name: SPELL_MOB
+          amount: 50
+        sound:
+          name: BLOCK_METAL_PLACE
+          volume: 1
+          pitch: 2
+      free:
+        particle:
+          name: EXPLOSION_LARGE
+          amount: 1
+        sound:
+          name: ENTITY_CHICKEN_EGG
+          volume: 1
+          pitch: 2
+      missed:
+        particle:
+          name: CRIT
+          amount: 20
+        sound:
+          name: ENTITY_ARMOR_STAND_HIT
+          volume: 1
+          pitch: 2
+      not_spawned:
+        particle:
+          name: BARRIER
+          amount: 1
+        sound:
+          name: ENTITY_ARMOR_STAND_HIT
+          volume: 1
+          pitch: 2
+    buy:
+      enabled: true
+      price: 999999
+      amount: 3
+    craft-recipe:
+      enabled: true
+      pattern:
+        - XOX
+        - XEX
+        - XOX
+      ingredients:
+        O: OBSIDIAN
+        E: ENDER_CHEST
+  farm_ball:
+    display-name: "Farm Ball"
+    head-texture: "eyJ0aW1lc3RhbXAiOjE1ODU5NDkxNDIzOTAsInByb2ZpbGVJZCI6ImQ2MGYzNDczNmExMjQ3YTI5YjgyY2M3MTViMDA0OGRiIiwicHJvZmlsZU5hbWUiOiJCSl9EYW5pZWwiLCJzaWduYXR1cmVSZXF1aXJlZCI6dHJ1ZSwidGV4dHVyZXMiOnsiU0tJTiI6eyJ1cmwiOiJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzEwZjA5ZjRiN2M0ZjgyOGRiNmVkOWQwODI3ZTcyMzI3OTZhZTE2NzVlMDJkODNmOTYyZGM0NTU3ZTE2MTU5YzYifX19"
+    max-usages: 4
+    catch-success: 60.0
+    catchable-entities:
+      - CHICKEN
+      - COW
+      - PIG
+      - RABBIT
+      - SHEEP
+      - RABBIT
+  nether_ball:
+    display-name: "Nether Ball"
+    head-texture: "eyJ0aW1lc3RhbXAiOjE1ODU5OTMzODk0MzAsInByb2ZpbGVJZCI6ImQ2MGYzNDczNmExMjQ3YTI5YjgyY2M3MTViMDA0OGRiIiwicHJvZmlsZU5hbWUiOiJCSl9EYW5pZWwiLCJzaWduYXR1cmVSZXF1aXJlZCI6dHJ1ZSwidGV4dHVyZXMiOnsiU0tJTiI6eyJ1cmwiOiJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzYxZGE2ZDYyMDBmZWVkMmI1ZmFhM2MyODMxYThmNDFlMDhiNzg0ZWU1MDExZjdiZmEyN2ViZDViYmU2YTcxZjcifX19"
+    max-usages: 4
+    catch-success: 50.0
+    catchable-entities:
+      - BLAZE
+      - MAGMA_CUBE
+      - WITHER_SKELETON
+      - PIG_ZOMBIE
+  end_ball:
+    display-name: "End Ball"
+    head-texture: "eyJ0aW1lc3RhbXAiOjE1ODY0MjI5NzAwMTYsInByb2ZpbGVJZCI6IjU3MGIwNWJhMjZmMzRhOGViZmRiODBlY2JjZDdlNjIwIiwicHJvZmlsZU5hbWUiOiJMb3JkU29ubnkiLCJzaWduYXR1cmVSZXF1aXJlZCI6dHJ1ZSwidGV4dHVyZXMiOnsiU0tJTiI6eyJ1cmwiOiJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzNmN2I5YTZmMDZiNWU0YjEyYjZhYmMyMTRlOWEzMTJjMDc5Nzg5NmYyZjM0NTJkM2JmMGZjNzJmOWZiMDUzYSJ9fX0="
+    max-usages: 3
+    catch-success: 60.0
+    catchable-entities:
+      - ENDERMAN
+      - ENDERMITE
+      - SHULKER
+  monster_ball:
+    display-name: "Monster Ball"
+    head-texture: "eyJ0aW1lc3RhbXAiOjE1ODY0MjU1MjQwOTEsInByb2ZpbGVJZCI6IjNmYzdmZGY5Mzk2MzRjNDE5MTE5OWJhM2Y3Y2MzZmVkIiwicHJvZmlsZU5hbWUiOiJZZWxlaGEiLCJzaWduYXR1cmVSZXF1aXJlZCI6dHJ1ZSwidGV4dHVyZXMiOnsiU0tJTiI6eyJ1cmwiOiJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzY3NzUyYWVhMGJmMzQ4ZDVmNWEyMWRkZDc0MzI0MGQ5MjJiMmVjODYxNzlmZDBmNDFmNDM3M2Y1ZmY0ZmUwZWYifX19"
+    max-usages: 4
+    catch-success: 50.0
+    catchable-entities:
+      - CREEPER
+      - HUSK
+      - SKELETON
+      - STRAY
+      - ZOMBIE
+  villager_ball:
+    display-name: "Villager Ball"
+    head-texture: "eyJ0aW1lc3RhbXAiOjE1ODY0MjM4MTQ0MzEsInByb2ZpbGVJZCI6ImMxYWYxODI5MDYwZTQ0OGRhNjYwOWRmZGM2OGEzOWE4IiwicHJvZmlsZU5hbWUiOiJCQVJLeDQiLCJzaWduYXR1cmVSZXF1aXJlZCI6dHJ1ZSwidGV4dHVyZXMiOnsiU0tJTiI6eyJ1cmwiOiJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlL2Y1ZTNjMzNlNDMyZTFjMWUwNDkwNDMxNTg2ZDExMWM3ZWI4N2E1M2QzN2UwZjkxZDAyMTA0YzFiOTU2ZGQ2YzEifX19"
+    max-usages: 5
+    catch-success: 45.0
+    catchable-entities:
+      - VILLAGER
+      - ZOMBIE_VILLAGER
+      - WANDERING_TRADER
+  friend_ball:
+    display-name: "Friend Ball"
+    head-texture: "eyJ0aW1lc3RhbXAiOjE1ODY0MjU2ODI5MzEsInByb2ZpbGVJZCI6IjU2Njc1YjIyMzJmMDRlZTA4OTE3OWU5YzkyMDZjZmU4IiwicHJvZmlsZU5hbWUiOiJUaGVJbmRyYSIsInNpZ25hdHVyZVJlcXVpcmVkIjp0cnVlLCJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTAzZjRjMTY3NjA0NWE2NGM1NzA5ZmJlZjk3NTA1OTc3OTczNjJjNmU0NzFhOTcxNmQ3ODI2MDFkY2U2ZmNiOSJ9fX0="
+    max-usages: 5
+    catch-success: 45.0
+    catchable-entities:
+      - CAT
+      - OCELOT
+      - PARROT
+      - WOLF
+  horse_ball:
+    display-name: "Horse Ball"
+    head-texture: "eyJ0aW1lc3RhbXAiOjE1ODY0MjU5Nzk4MjcsInByb2ZpbGVJZCI6IjE5MjUyMWI0ZWZkYjQyNWM4OTMxZjAyYTg0OTZlMTFiIiwicHJvZmlsZU5hbWUiOiJTZXJpYWxpemFibGUiLCJzaWduYXR1cmVSZXF1aXJlZCI6dHJ1ZSwidGV4dHVyZXMiOnsiU0tJTiI6eyJ1cmwiOiJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzdmZmNkOTA1YTVhOWQyZTcwNDYwNTk5ZWM5ODI2OWQxYzcxMzFmYWIxM2EzMmRiNTNhYjk2NDM2MTBmYTVlM2IifX19"
+    max-usages: 5
+    catch-success: 45.0
+    catchable-entities:
+      - HORSE
+      - DONKEY
+      - MULE
+      - SKELETON_HORSE
+      - ZOMBIE_HORSE
+  water_ball:
+    display-name: "Water Ball"
+    head-texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzM1M2VjM2ZlMDU2ODFiOTZmOTcxYWM2NmZhMTMzN2UwNGIyYjFhYmM1YWI1NGU1OGUxNjE3MmUyMzk0In19fQ=="
+    max-usages: 5
+    catch-success: 70.0
+    effects:
+      catch:
+        particle:
+          name: WATER_SPLASH
+          amount: 100
+      free:
+        particle:
+          name: WATER_SPLASH
+          amount: 80
+    catchable-entities:
+      - COD
+      - SALMON
+      - TROPICAL_FISH
+      - SQUID
+      - TURTLE
+      - DOLPHIN
+  ultra_ball:
+    display-name: "Ultra Ball"
+    head-texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTFmMWVhY2JiZTM3NjU1N2Y1ZDdkM2VjZTU5NGRiMTMzOGY2NjYzNjYyOTgyY2ZjNjU4YzdhN2RjNjM5ZDc3In19fQ=="
+    max-usages: 5
+    catch-success: 70.0
+    catchable-entities:
+      - ALL_ANIMALS
+      - ALL_WATER_MOBS
+  master_ball:
+    display-name: "Master Ball"
+    head-texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTU2ZDJhMWNkZGE4Nzc4ZmZkODMzYzdhNWY1MzliODdmOTllYjgzYTVkMTk1OTllNWZhOGU2Yzk2NmMzN2MyIn19fQ=="
+    max-usages: 4
+    catch-success: 70.0
+    buy:
+      enabled: false
+      price: 1000
+      amount: 5
+    effects:
+      catch:
+        particle:
+          name: FLAME
+          amount: 100
+      free:
+        particle:
+          name: CLOUD
+          amount: 80
+    catchable-entities:
+      - ALL_MOBS
+    blacklisted-entities:
+      - ENDER_DRAGON
+      - WITHER
+      - GHAST
