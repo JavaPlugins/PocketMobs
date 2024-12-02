@@ -56,7 +56,9 @@ public class BallsManager
                     config.getString("balls." + key + ".head-texture")
             );
 
-            tmp.setDisplayName(ChatColor.RESET + config.getString("balls." + key + ".display-name"));
+            // Add color support to displayname of balls
+            // Old tmp.setDisplayName(ChatColor.RESET + config.getString("balls." + key + ".display-name"));
+            tmp.setDisplayName(ChatColor.translateAlternateColorCodes('&',config.getString("balls." + key + ".display-name")));
 
             if(Settings.config.getBoolean("logic.buy.enabled", true))
             {
