@@ -67,7 +67,7 @@ default:
           pitch: 2
       not_spawned:
         particle:
-          name: BARRIER
+          name: SWEEP_ATTACK
           amount: 1
         sound:
           name: ENTITY_ARMOR_STAND_HIT
